@@ -1,0 +1,21 @@
+* Work experience
+** DONE List projects
+   CLOSED: [2018-06-22 pią 22:07]
+** Describe projects
+- Languages
+- Skills (Dev, SysOps, leadership, etc)
+* Academic and personal projects
+** TODO List
+** TODO Describe and link to Github
+* TODO Write simple LateX class based on:
+- https://github.com/billryan/resume
+- https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
+- https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html
+- https://github.com/posquit0/Awesome-CV
+* Convert org doc into CV
+- Use automatic export with annotations?
+* Feature ideas:
+- Nerd font icons
+- Project / company logos
+- Time / project / language matrix
+- Some sort of technological chart / table: group frameworks / database engines / languages / etc
