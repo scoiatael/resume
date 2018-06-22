@@ -19,3 +19,4 @@
 - Project / company logos
 - Time / project / language matrix
 - Some sort of technological chart / table: group frameworks / database engines / languages / etc
+- Add trivia section about used editors - :written_in_spacemacs: ;)
