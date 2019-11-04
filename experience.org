@@ -1,5 +1,58 @@
-* Languages
-** Used in production:
+* Experience
+** Tooploox (2015-2019)
+*** One of major car manufacturers (2019)
+    Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location. Worked solo on:
+    - Update & storage mechanism (Algorithms),
+    - Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),
+    - Final implementation (Go).
+*** Quizzpy (2018-2019)
+    Live trivia show, targeted for Polish audience.
+    Worked in small cross-competence Scrum team. Focused on:
+    - Architecture & scaling (Event-sourcing, CQRS)
+    - Backend (Elixir, Postgres, Datadog)
+    - Streaming (OBS, Nginx, FFMpeg, RTMP, HLS)
+    - Infrastructure (Ansible, Terraform, Aws [EC2, S3, IAM, VPC, Lambda], Gcp [GKE, Big Query, Cloud SQL, Memory Store, Cloud Functions], Heroku)
+*** Implementation of Holacracy (2018-2019)
+    Part of initial group which evaluated various frameworks for power division in organisation.
+    Later spearheaded integration of developers into Holacracy, as a framework for structuring company.
+*** Group Nine Media (2016-2018)
+    Platform for monitoring & analysis of publishings on social platforms.
+    Worked as tech lead of group which designed & implemented:
+    - Data pipeline (Lambda Architecture),
+    - Raw data storage & rehydration (Go, Ruby, Cassandra),
+    - Anomaly detection (Ruby, Redis, Postgres, Google Spreadsheets API),
+    - Looker integration (Ruby, Postgres),
+    - Data Science batch analysis framework (Python, Spark, Jupyter, Apache Zepplin),
+    - Ingestion (Ruby, Facebook Graph API),
+    Also worked as part of Ops team, which cared for infrastructure using Chef, Nomad, Consul, Hashicorp Vault, Datadog & Docker on OVH.
+*** NowThis (2015-2016)
+    Custom workflow & automatization platform.
+    Worked part-time as part of several backend groups, co-authored:
+    - Architecture (Event-sourcing, CQRS),
+    - CI/CD pipeline (Jenkins, Docker, Nomad, Bash, Ruby).
+*** Golem app (2015)
+    Remote camera control for iOS devices.
+    Solely responsible for:
+    - Backend (Coffescript, Node.js, Redis, MongoDB)
+    - Admin panel (Angular 1.0)
+    - Hangouts integration (React)
+** Academic (2011-2016)
+*** Jarvis (Master's Thesis) (2015-2016)
+    Visual Programming IDE for Clojure - focused on exploring new forms of programming.
+    Written in ClojureScript, targeting Electron environment.
+*** Czero (2016)
+    Compiler for simpler C-like language with manual memory management, using LLVM in C++2014. Helped with lexer & parser, wrote final IR code generation.
+    Technologies: C++2014, LLVM, Maphoon (custom parser generator, similar to Bison).
+*** Zosia (2015)
+    Registration website for students' winter camp. Written in Django, with Postgres as storage and HTTP+Websockets for transport layer. Frontend in React.
+** Open Source (2017-)
+*** Remacs (2019)
+    Rust incremental port of Emacs. Leverages Rust compatibility with C ABI to rewrite function-by-function in a stable manner. So far contributed marginally, would love to continue.
+*** Colorls-rs (2017)
+    Rust utility to add icons to terminal `ls` command. Written as a study of reimplementing C functionality in Rust.
+*** Archai (2017)
+    Event sourcing data warehouse. Written in Go, using Cassandra as replicated, partitioned storage. Scalable horizontally. Later used & improved during work in Group Nine Media.
+* Languages used in production:
 - Ruby
 - Javascript (and dialects: Coffeescript, Typescript, Ecmascript 6)
 - Elixir
@@ -8,72 +61,9 @@
 - Chef
 - Ansible
 - Terraform
-** Wrote projects in:
-- Clojure and Clojurescript
-- SaltStack
-- C++11
-- Rust
-- Haskell
-- C
-- C# and F#
-- Prolog
-- Ocaml / SML
-* OS
-** Linux
-*** Arch, Antergos
-Used as my workstation system during studies and early years of work (2012-2016).
-*** Ubuntu, Debian
-Primary OS of choice for VPS and administrated machines (went through updates from 12.04 to 16.04).
-*** Alpine
-Primary choice for Docker images.
-*** CoreOS
-Experimented a little with, for setting up containerised services.
-** macOS
-Switched from Linux in 2016, still not sure if it was a good choice.
-* Work experience
-** Tooploox (2015--now)
-*** Golem app
-Remote camera control for iOS devices. Wrote:
-- Node.js server (Coffeescript app with REST API in Express and realtime communication via socket.io, backed by Redis and MongoDB),
-- Web app (Javascript SPA with React and socket.io),
-- Admin panel (Javascript SPA with Angular 1.0 and socket.io).
-*** MedMapr
-Tracking location of medical equipment with Estimote beacons. Worked on tracking devices - Linux on Android Mini PC sticks.
-*** NowThis
-*** Group Nine Media
-*** Internal projects (To be announced)
 * Education
-** Master of Computer Science
-2011-2016
-Computer Science Institute, The University of Wroclaw
-** XIVLO
-2008-2011
-Bilingual class with emphasis on mathematics and physics
-* Achievements
-** Prexy scholarship
-2012-2014
-Awarded to students with grade average over 4.5 (about 5\% of students).
-** Comissioned Studies Scholarship
-2011-2014
-Awarded to better 50\% of students. Consecutively awarded since beginning of studies.
-** Matura exam
-2011
-Scored over 95\% in mathematics (basic and extended level), over 80\% score in english.
-** SAT exam
-2010
-Scored over 90\% in mathematics (both high school and academic level) and physics, over 80\% average score in english.
-* Academic and personal projects
-** Algorithms and Data Structures, University of Wroclaw
-2013
-Various small but interesting algorithms (e.g. BFS, AStar, Heap, AVLTrees, UnionFind).
-** Earth simulation in new OpenGL/C++
-2012
-Course: Introduction to Computer Science course, University of Wroclaw.
-Medium size project using modern OpenGL to render simulation akin to Google Earth.
-** RPG Game in PyGame
-2012
-Course: Interactive applications in Python course, University of Wroclaw.
-Team project of writing a game, complete with particle effects, AI and sound.
+** Master of Computer Science (2011-2016)
+  Computer Science Institute, The University of Wroclaw
 * Interests
 ** Professional
 - Networking
