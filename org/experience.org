@@ -1,0 +1,87 @@
+* Experience
+** Tooploox (2015-2019)
+*** One of major car manufacturers (2019)
+    Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location. Worked solo on:
+    - Update & storage mechanism (Algorithms),
+    - Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),
+    - Final implementation (Go).
+*** Quizzpy (2018-2019)
+    ICON: https://d33wubrfki0l68.cloudfront.net/b0e95300f043b4d28372f8cf19277df987c936bc/b2032/quizzpy-logo.2aacc600.svg
+    Live trivia show, targeted for Polish audience.
+    Worked in small cross-competence Scrum team. Focused on:
+    - Architecture & scaling (Event-sourcing, CQRS)
+    - Backend (Elixir, Postgres, Datadog)
+    - Streaming (OBS, Nginx, FFMpeg, RTMP, HLS)
+    - Infrastructure (Ansible, Terraform, Aws [EC2, S3, IAM, VPC, Lambda], Gcp [GKE, Big Query, Cloud SQL, Memory Store, Cloud Functions], Heroku)
+*** Implementation of Holacracy (2018-2019)
+    ICON: https://images.squarespace-cdn.com/content/5d1239a79c02150001db74d4/1561475648342-TU0F0W6TRID5IAKCKM0E/Holacracy_Primary.png?format=1500w&content-type=image%2Fpng
+    Part of initial group which evaluated various frameworks for power division in organisation.
+    Later spearheaded integration of developers into Holacracy, as a framework for structuring company.
+*** Group Nine Media (2016-2018)
+    ICON: https://en.wikipedia.org/wiki/Group_Nine_Media#/media/File:Group_Nine_Media_Logo.svg
+    Platform for monitoring & analysis of publishings on social platforms.
+    Worked as tech lead of group which designed & implemented:
+    - Data pipeline (Lambda Architecture),
+    - Raw data storage & rehydration (Go, Ruby, Cassandra),
+    - Anomaly detection (Ruby, Redis, Postgres, Google Spreadsheets API),
+    - Looker integration (Ruby, Postgres),
+    - Data Science batch analysis framework (Python, Spark, Jupyter, Apache Zepplin),
+    - Ingestion (Ruby, Facebook Graph API),
+    Also worked as part of Ops team, which cared for infrastructure using Chef, Nomad, Consul, Hashicorp Vault, Datadog & Docker on OVH.
+*** NowThis (2015-2016)
+    ICON: https://en.wikipedia.org/wiki/NowThis_News#/media/File:Now_This_Logo_White.svg
+    Custom workflow & automatization platform.
+    Worked part-time as part of several backend groups, co-authored:
+    - Architecture (Event-sourcing, CQRS),
+    - CI/CD pipeline (Jenkins, Docker, Nomad, Bash, Ruby).
+*** Golem app (2015)
+    ICON: https://web.archive.org/web/20160318141954im_/http://golemapp.com/static/images/logo.png
+    Remote camera control for iOS devices with Galileo.
+    Solely responsible for:
+    - Backend (Coffescript, Node.js, Redis, MongoDB)
+    - Admin panel (Angular 1.0)
+    - Hangouts integration (React)
+** Academic (2011-2016)
+*** Jarvis (Master's Thesis) (2015-2016)
+    URL: https://github.com/scoiatael/masters_thesis / https://github.com/scoiatael/Jarvis
+    Visual Programming IDE for Clojure - focused on exploring new forms of programming.
+    Written in ClojureScript, targeting Electron environment.
+*** Czero (2016)
+    URL: https://github.com/scoiatael/czero
+    Compiler for simpler C-like language with manual memory management, using LLVM in C++2014. Helped with lexer & parser, wrote final IR code generation.
+    Technologies: C++2014, LLVM, Maphoon (custom parser generator, similar to Bison).
+*** Zosia (2015)
+    URL: https://github.com/ksiuwr/zosia16-site
+    Registration website for students' winter camp. Written in Django, with Postgres as storage and HTTP+Websockets for transport layer. Frontend in React.
+** Open Source (2017-)
+*** Remacs (2019)
+    URL: https://github.com/remacs/remacs
+    Rust incremental port of Emacs. Leverages Rust compatibility with C ABI to rewrite function-by-function in a stable manner. So far contributed marginally, would love to continue.
+*** Colorls-rs (2017)
+    URL: https://github.com/scoiatael/colorls-rs
+    Rust utility to add icons to terminal `ls` command. Written as a study of reimplementing C functionality in Rust.
+*** Archai (2017)
+    URL: https://github.com/scoiatael/archai
+    Event sourcing data warehouse. Written in Go, using Cassandra as replicated, partitioned storage. Scalable horizontally. Later used & improved during work in Group Nine Media.
+* Languages used in production:
+- Ruby
+- Javascript (and dialects: Coffeescript, Typescript, Ecmascript 6)
+- Elixir
+- Golang
+- Python
+- Chef
+- Ansible
+- Terraform
+* Education
+** Master of Computer Science (2011-2016)
+  Computer Science Institute, The University of Wroclaw
+* Interests
+** Professional
+- Networking
+- Machine learning and numerical analysis
+- Computer graphics / game development
+- Formal semantics of programming languages
+** Personal
+- Windsurfing
+- Yachting
+- Tabletop and collectible card games
