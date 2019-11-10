@@ -5,13 +5,15 @@
    CLOSED: [2019-11-07 Thu 15:43]
 - Languages
 - Skills (Dev, SysOps, leadership, etc)
-** TODO Add logos
+** DONE Add logos
+   CLOSED: [2019-11-10 Sun 19:01]
 * Academic and personal projects
 ** DONE List
    CLOSED: [2019-11-07 Thu 15:42]
 ** DONE Describe
    CLOSED: [2019-11-07 Thu 15:42]
-** TODO Link to Github
+** DONE Link to Github
+   CLOSED: [2019-11-10 Sun 19:01]
 * TODO Write simple LateX class based on:
 - https://github.com/billryan/resume
 - https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
