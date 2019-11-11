@@ -14,6 +14,14 @@
    CLOSED: [2019-11-07 Thu 15:42]
 ** DONE Link to Github
    CLOSED: [2019-11-10 Sun 19:01]
+* [33%] Write converter to resume.json
+** DONE Write tokenizer for org-mode
+   CLOSED: [2019-11-11 Mon 21:27]
+** TODO Write parser for org-mode
+** TODO Convert parsed org-mode into resume.json
+* TODO Write custom resume.json builder
+* TODO Write static site with stasis
+  https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
 * TODO Write simple LateX class based on:
 - https://github.com/billryan/resume
 - https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
@@ -21,9 +29,6 @@
 - https://github.com/posquit0/Awesome-CV
 * Languages
 ** TODO Add icons
-* Convert org doc into CV
-- Use automatic export with annotations?
-- Sort out all sections chronologically
 * Feature ideas:
 - Nerd font icons
 - Time / project / language matrix
