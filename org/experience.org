@@ -2,67 +2,63 @@
 ** Tooploox
     :FROM: 2014-06-07
     :TO: 2019-10-31
-    Joined as a Junior, left on a path to Seniority after 5 years. In the meantime built through them products with many startups and startup-like companies.
-    Started as a junior backend developer (CoffeeScript, Redis, MongoDB).
-    Gradually worked up to Senior position around 2017.
+    :POSITION: Fullstack Developer
+    Joined as a Junior, left on a path to Seniority after 5 years. In the meantime built through them products with many startups and startup-like companies. Started as a junior backend developer (CoffeeScript, Redis, MongoDB). Gradually worked up to Senior position around 2017.
 ** One of major car manufacturers
     :FROM: 2019-09-01
     :TO: 2019-10-31
     :POSITION: Freelance researcher
     Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location. Worked solo on:
-    - Update & storage mechanism (Algorithms),
-    - Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),
-    - Final implementation (Go).
+    Update & storage mechanism (Algorithms),
+    Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),
+    Final implementation (Go).
 ** Quizzpy
     :ICON: https://d33wubrfki0l68.cloudfront.net/b0e95300f043b4d28372f8cf19277df987c936bc/b2032/quizzpy-logo.2aacc600.svg
     :FROM: 2018-03-01
     :TO: 2019-09-01
     :POSITION: Tech Lead / Principle Software Engineer
-    Live trivia show, targeted for Polish audience.
-    Worked in small cross-competence Scrum team. Focused on:
-    - Architecture & scaling (Event-sourcing, CQRS)
-    - Backend (Elixir, Postgres, Datadog)
-    - Streaming (OBS, Nginx, FFMpeg, RTMP, HLS)
-    - Infrastructure (Ansible, Terraform, Aws [EC2, S3, IAM, VPC, Lambda], Gcp [GKE, Big Query, Cloud SQL, Memory Store, Cloud Functions], Heroku)
+    Live trivia show, targeted for Polish audience. Worked in small cross-competence Scrum team. Focused on:
+    Architecture & scaling (Event-sourcing, CQRS)
+    Backend (Elixir, Postgres, Datadog)
+    Streaming (OBS, Nginx, FFMpeg, RTMP, HLS)
+    Infrastructure (Ansible, Terraform, AWS [EC2, S3, IAM, VPC, Lambda], Gcp [GKE, Big Query, Cloud SQL, Memory Store, Cloud Functions], Heroku)
 ** Implementation of Holacracy at Tooploox
     :ICON: https://images.squarespace-cdn.com/content/5d1239a79c02150001db74d4/1561475648342-TU0F0W6TRID5IAKCKM0E/Holacracy_Primary.png?format=1500w&content-type=image%2Fpng
     :FROM: 2018-09-01
     :TO: 2019-10-31
-    Part of initial group which evaluated various frameworks for power division in organisation.
-    Later spearheaded integration of developers into Holacracy, as a framework for structuring company.
+    :POSITION: Engineering circle Facilitator / Strategy Guardian
+    Part of initial group which evaluated various frameworks for power division in organisation. Later spearheaded integration of developers into Holacracy, as a framework for structuring company.
 ** Group Nine Media
     :ICON: https://en.wikipedia.org/wiki/Group_Nine_Media#/media/File:Group_Nine_Media_Logo.svg
     :FROM: 2016-01-01
     :TO: 2018-03-01
     :POSITION: Data pipeline Tech Lead
-    Platform for monitoring & analysis of publishings on social platforms.
-    Worked as tech lead of group which designed & implemented:
-    - Data pipeline (Lambda Architecture),
-    - Warehousing (Go, Ruby, Cassandra),
-    - Anomaly detection (Ruby, Redis, Postgres, Google Spreadsheets API),
-    - Looker integration (Ruby, Postgres),
-    - Data Science batch analysis framework (Python, Spark, Jupyter, Apache Zepplin),
-    - Ingestion (Ruby, Facebook Graph API),
-    Also worked as part of Ops team, which cared for infrastructure using Chef, Nomad, Consul, Hashicorp Vault, Datadog & Docker on OVH.
+    Platform for monitoring & analysis of publishings on social platforms. Tech lead of group which designed & implemented:
+    Data pipeline (Lambda Architecture),
+    Warehousing (Go, Ruby, Cassandra),
+    Anomaly detection (Ruby, Redis, Postgres, Google Spreadsheets API),
+    Looker integration (Ruby, Postgres),
+    Data Science batch analysis framework (Python, Spark, Jupyter, Apache Zepplin),
+    Ingestion (Ruby, Facebook Graph API),
+    As part of Ops team, used Chef, Nomad, Consul, Hashicorp Vault, Datadog & Docker on OVH.
 ** NowThis
     :ICON: https://en.wikipedia.org/wiki/NowThis_News#/media/File:Now_This_Logo_White.svg
     :FROM: 2014-10-01
     :TO: 2016-01-01
     :POSITION: Backend Developer
-    Custom workflow & automatization platform.
-    Worked part-time as part of several backend groups, co-authored:
-    - Architecture (Event-sourcing, CQRS),
-    - CI/CD pipeline (Jenkins, Docker, Nomad, Bash, Ruby).
+    Custom workflow & automatization platform. Worked part-time as part of several backend groups, co-authored:
+    Architecture (Event-sourcing, CQRS),
+    CI/CD pipeline (Jenkins, Docker, Nomad, Bash, Ruby).
 ** Golem app
     :ICON: https://web.archive.org/web/20160318141954im_/http://golemapp.com/static/images/logo.png
     :FROM: 2014-06-07
     :TO: 2014-09-01
     :POSITION: Junior Fullstack Developer
-    Remote camera control for iOS devices with Galileo.
-    Solely responsible for:
-    - Backend (Coffescript, Node.js, Redis, MongoDB)
-    - Admin panel (Angular 1.0)
-    - Hangouts integration (React)
+    Remote camera control for iOS devices with Galileo. Solely responsible for:
+    Backend (Coffescript, Node.js, Redis, MongoDB)
+    Admin panel (Angular 1.0)
+    Hangouts integration (React)
+    Deployment (Vagrant, Debian, Fabric)
 * Skills
 ** Backend
    :LEVEL: Senior

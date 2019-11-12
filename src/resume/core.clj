@@ -1,6 +1,6 @@
 (ns resume.core
   (:require [resume.org :as org]
-            [clojure.data.json :as json]
+            [cheshire.core :as json]
             [resume.resume-json :as resume-json]))
 
 (def experience-source "org/experience.org")
@@ -13,5 +13,5 @@
       slurp
       org/parse
       resume-json/export
-      json/write-str
+      (#(json/generate-string % {:pretty true}))
       (spit resume-json-build)))
