@@ -5,8 +5,8 @@
     - Update & storage mechanism (Algorithms),
     - Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),
     - Final implementation (Go).
-*** qUIZZPY (2018-2019)
-    :icon: HTTPS://D33WUBRFKI0L68.CLOUDFRONT.NET/B0E95300F043B4D28372F8CF19277DF987C936BC/B2032/QUIZZPY-LOGO.2AACC600.SVG
+*** Quizzpy (2018-2019)
+    :icon: https://d33wubrfki0l68.cloudfront.net/b0e95300f043b4d28372f8cf19277df987c936bc/b2032/quizzpy-logo.2aacc600.svg
     Live trivia show, targeted for Polish audience.
     Worked in small cross-competence Scrum team. Focused on:
     - Architecture & scaling (Event-sourcing, CQRS)
