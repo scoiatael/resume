@@ -8,6 +8,7 @@
                  [org.clojure/core.match "0.3.0"]]
   :aliases {"build-resume-json" ["run" "-m" "resume.core/export-resume-json"]}
   :repl-options {:init-ns resume.core}
-  :profiles {:test {:dependencies [[midje "1.9.9"]
+  :profiles { ;:dev {:dependencies  [org.clojure/tools.trace "0.7.10"]}
+             :test {:dependencies [[midje "1.9.9"]
                                    [nubank/matcher-combinators "1.2.4"]]
                     :plugins [[lein-midje "3.2.1"]]}})

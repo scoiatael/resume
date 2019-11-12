@@ -14,12 +14,13 @@
    CLOSED: [2019-11-07 Thu 15:42]
 ** DONE Link to Github
    CLOSED: [2019-11-10 Sun 19:01]
-* [66%] Write converter to resume.json
+* [100%] Write converter to resume.json
 ** DONE Write tokenizer for org-mode
    CLOSED: [2019-11-11 Mon 21:27]
 ** DONE Write parser for org-mode
    CLOSED: [2019-11-12 Tue 14:33]
-** TODO Convert parsed org-mode into resume.json
+** DONE Convert parsed org-mode into resume.json
+   CLOSED: [2019-11-12 Tue 16:58]
 * TODO Write custom resume.json builder
 * TODO Write static site with stasis
   https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
