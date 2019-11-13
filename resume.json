@@ -1,0 +1,108 @@
+{
+  "basics" : {
+    "location" : {
+      "city" : "Wrocław",
+      "countryCode" : "PL"
+    },
+    "name" : "Łukasz Czapliński",
+    "label" : "Web Developer / Architect",
+    "email" : "lukasz@czaplin.ski",
+    "summary" : "I'm a fullstack with a focus on delivering & evolving products, not simply building features according to schedule. I'm open to working both remotely and on-site.",
+    "profiles" : [ {
+      "url" : "https://github.com/scoiatael",
+      "username" : "scoiatael",
+      "network" : "Github"
+    }, {
+      "url" : "https://keybase.io/scoiatael",
+      "username" : "scoiatael",
+      "network" : "Keybase"
+    } ]
+  },
+  "education" : [ {
+    "endDate" : "2016-11-07",
+    "startDate" : "2011-10-01",
+    "area" : "Computer Science",
+    "studyType" : "Masters",
+    "institution" : "University of Wroclaw"
+  } ],
+  "references" : [ ],
+  "skills" : [ {
+    "keywords" : [ "Golang", "Elixir", "Ruby", "Node.js (Coffeescript, Typescript, ES6)", "Postgres", "Redis", "Cassandra" ],
+    "level" : "Senior",
+    "name" : "Backend"
+  }, {
+    "keywords" : [ "Chef", "Ansible", "Terraform", "Computing Clouds", "CDNs", "Docker / Kubernetes", "Networking" ],
+    "level" : "Senior",
+    "name" : "Ops"
+  }, {
+    "keywords" : [ "Javascript (Coffeescript, Typescript, ES6)", "Sass", "React / Redux", "Vue.js" ],
+    "level" : "Mid",
+    "name" : "Frontend"
+  }, {
+    "keywords" : [ "Python (PySpark, Pandas, Jupter)", "BigQuery" ],
+    "level" : "Mid",
+    "name" : "Big Data"
+  }, {
+    "keywords" : [ "EventSourcing", "CQRS", "DDD", "Lambda architecture" ],
+    "level" : "Mid",
+    "name" : "Architecture"
+  }, {
+    "keywords" : [ "Agile development", "Jira", "Zenhub", "Scrum" ],
+    "level" : "Mid",
+    "name" : "Delivering products"
+  } ],
+  "awards" : [ ],
+  "work" : [ {
+    "summary" : "Joined as a Junior, left on a path to Seniority after 5 years. In the meantime built through them products with many startups and startup-like companies. Started as a junior backend developer (CoffeeScript, Redis, MongoDB). Gradually worked up to Senior position around 2017.",
+    "company" : "Tooploox",
+    "position" : "Fullstack Developer",
+    "startDate" : "2014-06-07",
+    "endDate" : "2019-10-31",
+    "highlights" : [ ]
+  }, {
+    "summary" : "Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location. Worked solo on:",
+    "company" : "One of major car manufacturers",
+    "position" : "Freelance researcher",
+    "startDate" : "2019-09-01",
+    "endDate" : "2019-10-31",
+    "highlights" : [ "Update & storage mechanism (Algorithms),", "Data cleaning & update simulation (BigQuery, Python, Pandas, PySpark),", "Final implementation (Go)." ]
+  }, {
+    "summary" : "Live trivia show, targeted for Polish audience. Worked in small cross-competence Scrum team. Focused on:",
+    "company" : "Quizzpy",
+    "position" : "Tech Lead / Principle Software Engineer",
+    "startDate" : "2018-03-01",
+    "endDate" : "2019-09-01",
+    "highlights" : [ "Architecture & scaling (Event-sourcing, CQRS)", "Backend (Elixir, Postgres, Datadog)", "Streaming (OBS, Nginx, FFMpeg, RTMP, HLS)", "Infrastructure (Ansible, Terraform, AWS [EC2, S3, IAM, VPC, Lambda], Gcp [GKE, Big Query, Cloud SQL, Memory Store, Cloud Functions], Heroku)" ]
+  }, {
+    "summary" : "Part of initial group which evaluated various frameworks for power division in organisation. Later spearheaded integration of developers into Holacracy, as a framework for structuring company.",
+    "company" : "Implementation of Holacracy at Tooploox",
+    "position" : "Engineering circle Facilitator / Strategy Guardian",
+    "startDate" : "2018-09-01",
+    "endDate" : "2019-10-31",
+    "highlights" : [ ]
+  }, {
+    "summary" : "Platform for monitoring & analysis of publishings on social platforms. Tech lead of group which designed & implemented:",
+    "company" : "Group Nine Media",
+    "position" : "Data pipeline Tech Lead",
+    "startDate" : "2016-01-01",
+    "endDate" : "2018-03-01",
+    "highlights" : [ "Data pipeline (Lambda Architecture),", "Warehousing (Go, Ruby, Cassandra),", "Anomaly detection (Ruby, Redis, Postgres, Google Spreadsheets API),", "Looker integration (Ruby, Postgres),", "Data Science batch analysis framework (Python, Spark, Jupyter, Apache Zepplin),", "Ingestion (Ruby, Facebook Graph API),", "As part of Ops team, used Chef, Nomad, Consul, Hashicorp Vault, Datadog & Docker on OVH." ]
+  }, {
+    "summary" : "Custom workflow & automatization platform. Worked part-time as part of several backend groups, co-authored:",
+    "company" : "NowThis",
+    "position" : "Backend Developer",
+    "startDate" : "2014-10-01",
+    "endDate" : "2016-01-01",
+    "highlights" : [ "Architecture (Event-sourcing, CQRS),", "CI/CD pipeline (Jenkins, Docker, Nomad, Bash, Ruby)." ]
+  }, {
+    "summary" : "Remote camera control for iOS devices with Galileo. Solely responsible for:",
+    "company" : "Golem app",
+    "position" : "Junior Fullstack Developer",
+    "startDate" : "2014-06-07",
+    "endDate" : "2014-09-01",
+    "highlights" : [ "Backend (Coffescript, Node.js, Redis, MongoDB)", "Admin panel (Angular 1.0)", "Hangouts integration (React)", "Deployment (Vagrant, Debian, Fabric)" ]
+  } ],
+  "meta" : {
+    "theme" : "elegant"
+  }
+}
