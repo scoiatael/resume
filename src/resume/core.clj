@@ -4,7 +4,7 @@
             [resume.resume-json :as resume-json]))
 
 (def experience-source "org/experience.org")
-(def resume-json-build "resume.json")
+(def resume-json-build "target/resume.json")
 
 (defn export-resume-json
   "Convert org/experience.org into build/resume.json"
