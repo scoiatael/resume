@@ -7,6 +7,7 @@
                  [cheshire "5.9.0"]
                  [org.clojure/core.match "0.3.0"]
                  [selmer "1.12.17"]
+                 [clojure.java-time "0.3.2"]
                  [stasis "2.5.0"]]
   :aliases {"export" ["run" "-m" "resume.core/export"]
             "test" ["with-profile" "test" "midje"]}

@@ -1,4 +1,9 @@
-(ns resume.resume-json)
+(ns resume.resume-json
+  (:require [java-time :as time]))
+
+(defn parse-date
+  [date]
+  (time/local-date "yyyy-MM-dd" date))
 
 (defn export-education
   "Convert org section about education into resume.json format"
@@ -8,8 +13,8 @@
           area "AREA"
           degree "DEGREE"
           institution "INSTITUTION"} :options} education]
-    {:endDate to
-     :startDate from
+    {:endDate (parse-date to)
+     :startDate (parse-date from)
      :area area
      :studyType degree
      :institution institution}))
@@ -67,8 +72,8 @@
     {:summary (first text)
      :company name
      :position (get options "POSITION")
-     :startDate (get options "FROM")
-     :endDate (get options "TO")
+     :startDate (parse-date (get options "FROM"))
+     :endDate (parse-date (get options "TO"))
      :highlights (rest text)}))
 
 (defn export
