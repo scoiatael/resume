@@ -32,6 +32,7 @@
 ** TODO Add languages & interests
 ** TODO Reword work highlights to work with current theme
 * TODO Add PDF export
+  https://github.com/gered/clj-htmltopdf
 * DONE Write static site with stasis
   CLOSED: [2019-11-14 Thu 15:12]
   https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
