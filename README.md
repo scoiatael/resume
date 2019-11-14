@@ -7,10 +7,8 @@ A Clojure site for buidling my resume
 `org/experience.org` serves as data file, to be edited with Emacs org-mode (or any other editor with org-mode support).
 
 Lein tasks can be used to convert into:
-- [`resume.json`](https://jsonresume.org) - `lein build-resume-json` - generates `target/resume.json`,
-- HTML file - `lein build-resume-html` - generates `target/dist/resume.html`,
+- [`resume.json`](https://jsonresume.org) - and then HTML via `lein export`,
 - Latex source for PDF [TODO]
-
 
 
 ## License

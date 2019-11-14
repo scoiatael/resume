@@ -81,4 +81,4 @@
      :skills (->> sections-by-name (#(get % "Skills")) :children (map export-skills))
      :awards []
      :work (->> sections-by-name (#(get % "Experience")) :children (map export-experience))
-     :meta {:theme :elegant}}))
+     :meta {:theme :pumpkin}}))
