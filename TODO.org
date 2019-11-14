@@ -21,7 +21,7 @@
    CLOSED: [2019-11-12 Tue 14:33]
 ** DONE Convert parsed org-mode into resume.json
    CLOSED: [2019-11-12 Tue 16:58]
-* [66%] Write custom resume.json builder
+* [83%] Write custom resume.json builder
 ** DONE Convert chosen resume format into Clojure template
    CLOSED: [2019-11-14 Thu 15:02]
 ** DONE Embed CSS into HTML
@@ -30,7 +30,8 @@
    CLOSED: [2019-11-14 Thu 15:12]
 ** DONE Fix date formatting
    CLOSED: [2019-11-14 Thu 19:03]
-** TODO Add languages & interests
+** DONE Add languages & interests
+   CLOSED: [2019-11-14 Thu 19:19]
 ** TODO Reword work highlights to work with current theme
 * TODO Add PDF export
   https://github.com/gered/clj-htmltopdf

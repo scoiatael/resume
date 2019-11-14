@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
 ## [Unreleased]
+### Added
+- Sections about language and interests are now properly parsed & added to both JSON and HTML output
+
 ### Changed
 - Dates are now properly parsed & nicely formatted in HTML output.
 
