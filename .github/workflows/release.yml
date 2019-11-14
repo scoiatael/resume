@@ -20,6 +20,13 @@ jobs:
           lein build-resume-html
           echo "##[set-output name=version;]$(cat project.clj | head -n 1 | awk '{ print $3 }' | tr -d '\"')"
 
+      - name: Tag Release
+        run: |
+          git tag v${{ steps.build_resume_json.outputs.version }}
+          git push --tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
