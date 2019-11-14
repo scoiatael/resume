@@ -5,9 +5,9 @@
             [stasis.core :as stasis]))
 
 (defn resume-page [_request] (selmer/render-file "resume.html" {:resume (core/generate-resume)
+                                                                :css (slurp (io/resource "public/style.css"))
                                                                 :css-paths ["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"
-	                                                                          "https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"
-                                                                            "style.css"]}))
+	                                                                          "https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"]}))
 
 (defn get-pages []
   (stasis/merge-page-sources
