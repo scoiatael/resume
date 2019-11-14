@@ -16,8 +16,7 @@ jobs:
       - name: Build project
         id: build_resume_json
         run: |
-          lein build-resume-json
-          lein build-resume-html
+          lein export
           echo "##[set-output name=version;]$(cat project.clj | head -n 1 | awk '{ print $3 }' | tr -d '\"')"
 
       - name: Tag Release
@@ -44,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./target/resume.json
+          asset_path: ./target/dist/resume.json
           asset_name: resume.json
           asset_content_type: application/json
 

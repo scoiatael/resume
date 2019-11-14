@@ -1,21 +1,12 @@
 (ns resume.core
-  (:require [resume.org :as org]
-            [cheshire.core :as json]
-            [resume.resume-json :as resume-json]))
+  (:require [clojure.java.io :as io]
+            [selmer.parser :as selmer]
+            [stasis.core :as stasis]
+            [resume.pages :as pages]))
 
-(def experience-source "org/experience.org")
-(def resume-json-build "target/resume.json")
+(def export-dir "target/dist")
 
-(defn generate-resume
-  []
-  (->> experience-source
-       slurp
-       org/parse
-       resume-json/export))
-
-(defn export-resume-json
-  "Convert org/experience.org into build/resume.json"
-  []
-  (->> (generate-resume)
-      (#(json/generate-string % {:pretty true}))
-      (spit resume-json-build)))
+(defn export []
+  (selmer/set-resource-path! (io/resource "templates"))
+  (stasis/empty-directory! export-dir)
+  (stasis/export-pages pages/all export-dir))
