@@ -21,15 +21,19 @@
    CLOSED: [2019-11-12 Tue 14:33]
 ** DONE Convert parsed org-mode into resume.json
    CLOSED: [2019-11-12 Tue 16:58]
-* [40%] Write custom resume.json builder
+* [50%] Write custom resume.json builder
 ** DONE Convert chosen resume format into Clojure template
    CLOSED: [2019-11-14 Thu 15:02]
 ** DONE Embed CSS into HTML
    CLOSED: [2019-11-14 Thu 15:07]
+** DONE Export static html file
+   CLOSED: [2019-11-14 Thu 15:12]
 ** TODO Fix date formatting
 ** TODO Add languages & interests
-** TODO Fix highlights to work with current theme
-* TODO Write static site with stasis
+** TODO Reword work highlights to work with current theme
+* TODO Add PDF export
+* DONE Write static site with stasis
+  CLOSED: [2019-11-14 Thu 15:12]
   https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
 * TODO Write simple LateX class based on:
 - https://github.com/billryan/resume

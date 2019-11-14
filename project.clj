@@ -8,7 +8,8 @@
                  [org.clojure/core.match "0.3.0"]
                  [selmer "1.12.17"]
                  [stasis "2.5.0"]]
-  :aliases {"build-resume-json" ["run" "-m" "resume.core/export-resume-json"]}
+  :aliases {"build-resume-json" ["run" "-m" "resume.core/export-resume-json"]
+            "build-resume-html" ["run" "-m" "resume.web/export"]}
   :repl-options {:init-ns resume.core}
   :ring {:handler resume.web/app}
   :profiles {:dev {:plugins [[lein-ring "0.12.5"]]
