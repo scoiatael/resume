@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [Unreleased]
+### Changed
+- Dates are now properly parsed & nicely formatted in HTML output.
+
 ## [1.1.1] - 14.11.2019
 ### Changed
 - Internals & CLI entrypoint - now uses `lein export`.
