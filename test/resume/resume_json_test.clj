@@ -51,3 +51,15 @@
                 :endDate (sut/parse-date "2019-03-01")
                 :highlights ["React, Apollo, Styled Components"
                              "Node.js / Rails"]})
+
+(midje/fact "Interests are exported properly"
+            (sut/export-interest {:heading "Netflix"
+                                  :text ["Chilling" "Popcorn"]})
+            => {:name "Netflix"
+                :keywords ["Chilling" "Popcorn"]})
+
+(midje/fact "Languages are exported properly"
+            (sut/export-language {:heading "KPOP"
+                                  :options {"LEVEL" "over 9000"}})
+            => {:language "KPOP"
+                :fluency "over 9000"})

@@ -123,12 +123,19 @@
 *** Keybase
     :USERNAME: scoiatael
     :URL: https://keybase.io/scoiatael
-** Professional interests
-- Networking
-- Machine learning and numerical analysis
-- Computer graphics / game development
-- Formal semantics of programming languages
-** Personal
-- Windsurfing
-- Yachting
-- Tabletop and collectible card games
+* Interests
+** Windsurfing
+** Yachting
+    Polish skipper degree
+** Tabletop and collectible card games
+    Magic the Gathering
+    Warhammer 40k
+* Languages
+** Polish
+    :LEVEL: native
+** English
+    :LEVEL: bilingual
+** Spanish
+    :LEVEL: novice
+** German
+    :LEVEL: novice
