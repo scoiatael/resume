@@ -14,6 +14,8 @@
        org/parse
        resume-json/export))
 
+(selmer/set-resource-path! (io/resource "templates"))
+
 (defn resume-html
   "Prepare resume.html source"
   []

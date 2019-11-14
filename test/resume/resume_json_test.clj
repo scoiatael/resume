@@ -12,8 +12,8 @@
                                              "AREA" "Software Engineering (incomplete)",
                                              "DEGREE" "Bachelors"
                                              "INSTITUTION" "The University of Queensland"}})
-            => {:endDate "2012-01-12"
-                :startDate "2009-12-12"
+            => {:endDate (sut/parse-date "2012-01-12")
+                :startDate (sut/parse-date "2009-12-12")
                 :area "Software Engineering (incomplete)"
                 :studyType "Bachelors"
                 :institution "The University of Queensland"})
@@ -47,7 +47,19 @@
             => {:summary "Blockbid is an Australian crypto currency exchange."
                 :company "Blockbid"
                 :position "Senior Javascript Developer"
-                :startDate "2018-03-01"
-                :endDate "2019-03-01"
+                :startDate (sut/parse-date "2018-03-01")
+                :endDate (sut/parse-date "2019-03-01")
                 :highlights ["React, Apollo, Styled Components"
                              "Node.js / Rails"]})
+
+(midje/fact "Interests are exported properly"
+            (sut/export-interest {:heading "Netflix"
+                                  :text ["Chilling" "Popcorn"]})
+            => {:name "Netflix"
+                :keywords ["Chilling" "Popcorn"]})
+
+(midje/fact "Languages are exported properly"
+            (sut/export-language {:heading "KPOP"
+                                  :options {"LEVEL" "over 9000"}})
+            => {:language "KPOP"
+                :fluency "over 9000"})

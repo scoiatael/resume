@@ -137,7 +137,7 @@ SOFTWARE.
 				<h4 class="strike-through">
 					<span>{{work.company}}</span>
 					<span class="date">
-						{{work.startDate}} — {{work.endDate}}
+						{{work.startDate|date:"MMM yyyy"}} — {{work.endDate|date:"MMM yyyy"}}
 					</span>
 				</h4>
 				{% with url=work.website %}
@@ -179,7 +179,7 @@ SOFTWARE.
 				<h4 class="strike-through">
 					<span>{{education.institution}}</span>
 					<span class="date">
-						{{education.startDate}} — {{education.endDate}}
+						{{education.startDate|date:"MMM yyyy"}} — {{education.endDate|date:"MMM yyyy"}}
 					</span>
 				</h4>
 				<div class="area">

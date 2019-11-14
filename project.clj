@@ -1,4 +1,4 @@
-(defproject resume "1.1.1"
+(defproject resume "1.2.0"
   :description "Resume-from-org generator"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -7,6 +7,7 @@
                  [cheshire "5.9.0"]
                  [org.clojure/core.match "0.3.0"]
                  [selmer "1.12.17"]
+                 [clojure.java-time "0.3.2"]
                  [stasis "2.5.0"]]
   :aliases {"export" ["run" "-m" "resume.core/export"]
             "test" ["with-profile" "test" "midje"]}

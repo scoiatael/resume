@@ -1,4 +1,9 @@
-(ns resume.resume-json)
+(ns resume.resume-json
+  (:require [java-time :as time]))
+
+(defn parse-date
+  [date]
+  (time/local-date "yyyy-MM-dd" date))
 
 (defn export-education
   "Convert org section about education into resume.json format"
@@ -8,8 +13,8 @@
           area "AREA"
           degree "DEGREE"
           institution "INSTITUTION"} :options} education]
-    {:endDate to
-     :startDate from
+    {:endDate (parse-date to)
+     :startDate (parse-date from)
      :area area
      :studyType degree
      :institution institution}))
@@ -67,9 +72,25 @@
     {:summary (first text)
      :company name
      :position (get options "POSITION")
-     :startDate (get options "FROM")
-     :endDate (get options "TO")
+     :startDate (parse-date (get options "FROM"))
+     :endDate (parse-date (get options "TO"))
      :highlights (rest text)}))
+
+(defn export-interest
+  "Convert org section about interest into resume.json format"
+  [interest]
+  (let [{interest :heading
+         keywords :text} interest]
+    {:keywords keywords
+     :name interest}))
+
+(defn export-language
+  "Convert org section about language into resume.json format"
+  [language]
+  (let [{language :heading
+         {fluency "LEVEL"} :options} language]
+    {:fluency fluency
+     :language language}))
 
 (defn export
   "Exports parsed org experience file into resume.json format"
@@ -77,8 +98,8 @@
   (let [sections-by-name (sections-into-map org)]
     {:basics (->> sections-by-name (#(get % "Basics")) export-basics)
      :education (->> sections-by-name (#(get % "Education")) :children (map export-education))
-     :references []
      :skills (->> sections-by-name (#(get % "Skills")) :children (map export-skills))
-     :awards []
      :work (->> sections-by-name (#(get % "Experience")) :children (map export-experience))
+     :languages (->> sections-by-name (#(get % "Languages")) :children (map export-language))
+     :interests (->> sections-by-name (#(get % "Interests")) :children (map export-interest))
      :meta {:theme :pumpkin}}))
