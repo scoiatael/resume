@@ -34,8 +34,12 @@
    CLOSED: [2019-11-14 Thu 19:19]
 ** DONE Reword work highlights to work with current theme
    CLOSED: [2019-11-14 Thu 19:42]
-* TODO Add PDF export
-  https://github.com/gered/clj-htmltopdf
+* DONE Add PDF export
+  CLOSED: [2019-11-16 Sat 17:50]
+  Simply not feasible. Tested out:
+  - https://github.com/gered/clj-htmltopdf
+  - https://github.com/GoogleChrome/puppeteer
+  Output is either wrong, or badly split. Looks like LateX wins this round.
 * DONE Write static site with stasis
   CLOSED: [2019-11-14 Thu 15:12]
   https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
