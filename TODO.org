@@ -43,11 +43,15 @@
 * DONE Write static site with stasis
   CLOSED: [2019-11-14 Thu 15:12]
   https://cjohansen.no/building-static-sites-in-clojure-with-stasis/
-* TODO Write simple LateX class based on:
+* [33%] Write simple LateX class based on:
 - https://github.com/billryan/resume
 - https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
 - https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html
 - https://github.com/posquit0/Awesome-CV
+** DONE First pass
+   CLOSED: [2019-11-17 Sun 00:15]
+** TODO Make network table flexible
+** TODO Add pdflatex binary to CD
 * Languages
 ** TODO Add icons
 * Feature ideas:

@@ -2,6 +2,10 @@
 
 A Clojure site for buidling my resume
 
+## Dependencies
+
+Requires `pdflatex` on `PATH`. TODO: Describe getting it on macOS :)
+
 ## Usage
 
 `org/experience.org` serves as data file, to be edited with Emacs org-mode (or any other editor with org-mode support).

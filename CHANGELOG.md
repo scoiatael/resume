@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## Unreleased
+### Added
+- PDF rendering via LaTeX.
+
 ## [1.2.0] - 14.11.2019
 ### Added
 - Sections about language and interests are now properly parsed & added to both JSON and HTML output
