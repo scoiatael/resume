@@ -12,7 +12,7 @@
 <% safe %>
 \section{Contact}
 \begin{multicols}{2}
-\textbf{email}\\
+\noindent\textbf{email}\\
 <{resume.basics.email}>\\
 \textbf{location}\\
 <{resume.basics.location.city}> (<{resume.basics.location.countryCode|upper}>)
@@ -29,7 +29,7 @@
     <% endif %>
     <% endfor %> \\
     <% for profile in resume.basics.profiles %>
-    <{ profile.username }> (<{ profile.url }>)
+    <{ profile.url }>
     <% if not forloop.last %>
     &
     <% endif %>
@@ -39,7 +39,7 @@
 \section{Education}
 <% for education in resume.education %>
 \datedsubsection{<{education.institution}>}{<{education.startDate|date:"MMM yyyy"}> — <{education.endDate|date:"MMM yyyy"}>}
-\textbf{<{education.area}>} - <{education.studyType}>
+\noindent\textbf{<{education.area}>} - <{education.studyType}>
 <% endfor %>
 \section{Skills}
 \begin{multicols}{2}
@@ -72,17 +72,6 @@
 <% endif %>
 <% endfor %>
 \section{Interests}
-<% for interest in resume.interests %>
-\subsection{<{interest.name}>}
-<% if interest.keywords|not-empty %>
-\begin{itemize}
-  \setlength\itemsep{0.1em}
-  <% for keyword in interest.keywords %>
-\item <{ keyword|escape-tex }>
-  <% endfor %>
-\end{itemize}
-\vspace{0.5em}
-<% endif %>
-<% endfor %>
+<% for interest in resume.interests %><{interest.name}><% if not forloop.last? %>, <% endif %><% endfor %>
 \end{document}
 <% endsafe %>
