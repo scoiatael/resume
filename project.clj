@@ -1,4 +1,4 @@
-(defproject resume "1.3.2"
+(defproject resume "1.3.3"
   :description "Resume-from-org generator"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"

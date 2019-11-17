@@ -42,15 +42,9 @@
 \noindent\textbf{<{education.area}>} - <{education.studyType}>
 <% endfor %>
 \section{Skills}
-\begin{multicols}{2}
-  \begin{itemize}
-    \setlength\itemsep{0.1em}
-  <% for skill in resume.skills %>
-  \item <{skill.name}> (\textit{<{skill.level|lower|}>})
-  <% endfor %>
-  \end{itemize}
-  \vspace{0.5em}
-\end{multicols}
+<% for skill in resume.skills %>
+\noindent\textbf{<{skill.name}>} (\textit{<{skill.level|lower|}>}): <{ skill.keywords|join:", " }>
+<% endfor %>
 \section{Languages}
 \begin{multicols}{2}
   <% for language in resume.languages %>

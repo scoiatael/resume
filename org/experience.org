@@ -22,7 +22,7 @@
     :ICON: https://images.squarespace-cdn.com/content/5d1239a79c02150001db74d4/1561475648342-TU0F0W6TRID5IAKCKM0E/Holacracy_Primary.png?format=1500w&content-type=image%2Fpng
     :FROM: 2018-09-01
     :TO: 2019-10-31
-    :POSITION: Facilitator, Architect, Estimator, Strategy Guardian (Engineering circle),
+    :POSITION: Facilitator, Architect, Estimator, Strategy Guardian (Engineering circle)
 ** Group Nine Media
     :ICON: https://en.wikipedia.org/wiki/Group_Nine_Media#/media/File:Group_Nine_Media_Logo.svg
     :FROM: 2016-01-01

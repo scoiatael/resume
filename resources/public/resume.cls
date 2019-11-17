@@ -31,7 +31,6 @@
 \newcommand{\name}[2]{%
   \centerline{\Huge{#1}}
   \centerline{\Large{#2}}
-  \vspace{1cm}
 }
 
 \newcommand{\datedsubsection}[2]{%
