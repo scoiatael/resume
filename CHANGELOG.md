@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [1.3.1] - 17.11.2019
+### Fixed
+- UTF8 characters in PDF rendering.
+
 ## [1.3.0] - 17.11.2019
 ### Added
 - PDF rendering via LaTeX.
