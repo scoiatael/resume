@@ -16,7 +16,7 @@ jobs:
       - name: Build project
         id: build_resume_json
         run: |
-          lein export
+          lein docker-export
           echo "##[set-output name=version;]$(cat project.clj | head -n 1 | awk '{ print $3 }' | tr -d '\"')"
 
       - name: Tag Release
