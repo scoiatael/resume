@@ -67,44 +67,31 @@
 * Skills
 ** Backend
    :LEVEL: Senior
-    Golang
-    Elixir
-    Ruby
-    Node.js
-    Postgres
-    Redis
-    Cassandra
+    Golang / Elixir / Ruby / Node.js
+    Postgres / Redis / Cassandra
 ** Ops
    :LEVEL: Senior
-    Chef
-    Ansible
-    Terraform
-    Computing Clouds (GCP, AWS)
+    Chef / Ansible / Terraform
+    GCP / AWS / OVH
     CDNs
     Docker / Kubernetes
-    Networking
 ** Frontend
    :LEVEL: Mid
     Javascript
     Css / Sass
-    React / Redux
-    Vue.js
+    React / Redux / Vue.js
 ** Architecture
    :LEVEL: Mid
-    EventSourcing
-    Command Query Responsibility Segregation
-    Domain-driven design
+    Event Sourcing / CQRS / DDD
     Lambda architecture
-** Product development
-   :LEVEL: Mid
-    Agile development
-    Jira
-    Zenhub
-    Scrum
 ** Big Data
    :LEVEL: Mid
-    Python
+    Python (Pandas / PySpark)
     BigQuery
+** Product development
+   :LEVEL: Mid
+    Agile methodology / Lean / Scrum
+    Github / Zenhub / Jira / Confluence
 * Education
 ** Master of Computer Science (2011-2016)
    :FROM: 2011-10-01
@@ -140,7 +127,3 @@
     :LEVEL: native
 ** English
     :LEVEL: bilingual
-** Spanish
-    :LEVEL: novice
-** German
-    :LEVEL: novice
