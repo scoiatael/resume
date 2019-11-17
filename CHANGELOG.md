@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [1.3.2] - 17.11.2019
+### Changed
+- Shortened PDF version to 2 pages.
+
 ## [1.3.1] - 17.11.2019
 ### Fixed
 - UTF8 characters in PDF rendering.
@@ -29,6 +33,8 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 - Export to [json resume](jsonresume.org).
 
+[1.3.2]: https://github.com/scoiatael/resume/compare/v1.3.1...v1.3.2
+[1.3.1]: https://github.com/scoiatael/resume/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/scoiatael/resume/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/scoiatael/resume/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/scoiatael/resume/compare/v1.1.0...v1.1.1
