@@ -56,3 +56,13 @@ jobs:
           asset_path: ./target/dist/resume.html
           asset_name: resume.html
           asset_content_type: text/html
+
+      - name: Upload resume.pdf
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./target/dist/resume.pdf
+          asset_name: resume.pdf
+          asset_content_type: application/pdf
