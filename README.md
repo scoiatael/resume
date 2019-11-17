@@ -4,15 +4,19 @@ A Clojure site for buidling my resume
 
 ## Dependencies
 
-Requires `pdflatex` on `PATH`. TODO: Describe getting it on macOS :)
+Requires either:
+- `pdflatex` on `PATH`. TODO: Describe getting it on macOS :)
+- or [Docker](https://www.docker.com/get-started).
 
 ## Usage
 
 `org/experience.org` serves as data file, to be edited with Emacs org-mode (or any other editor with org-mode support).
 
 Lein tasks can be used to convert into:
-- [`resume.json`](https://jsonresume.org) - and then HTML via `lein export`,
-- Latex source for PDF [TODO]
+- [`resume.json`](https://jsonresume.org) - and then HTML,
+- LaTeX source - and then PDF.
+
+Simply run `lein export` (if you have LaTeX available locally; check with `which pdflatex`), or `lein docker-export` if you have Docker.
 
 
 ## License

@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
-## Unreleased
+## [1.3.0] - 17.11.2019
 ### Added
 - PDF rendering via LaTeX.
 
@@ -25,6 +25,8 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 - Export to [json resume](jsonresume.org).
 
+[1.3.0]: https://github.com/scoiatael/resume/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/scoiatael/resume/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/scoiatael/resume/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/scoiatael/resume/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/scoiatael/resume/releases/v1.0.0
