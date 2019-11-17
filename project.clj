@@ -1,4 +1,4 @@
-(defproject resume "1.2.0"
+(defproject resume "1.3.0"
   :description "Resume-from-org generator"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -10,7 +10,8 @@
                  [clojure.java-time "0.3.2"]
                  [stasis "2.5.0"]]
   :aliases {"export" ["run" "-m" "resume.core/export"]
-            "test" ["with-profile" "test" "midje"]}
+            "test" ["with-profile" "test" "midje"]
+            "docker-export" ["run" "-m" "resume.docker/export"]}
   :repl-options {:init-ns resume.core}
   :ring {:handler resume.web/app}
   :profiles {:dev {:plugins [[lein-ring "0.12.5"]]

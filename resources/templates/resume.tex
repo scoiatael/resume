@@ -1,0 +1,85 @@
+%% Based on https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1)
+\documentclass{resume}
+
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+
+\begin{document}
+\name{<{resume.basics.name}>}{<{resume.basics.label}>}
+<% safe %>
+\section{Contact}
+\textbf{email}\\
+<{resume.basics.email}>
+\section{About}
+<{resume.basics.summary|escape-tex}>
+\section{Profiles}
+\begin{center}
+  \begin{tabular}{ c c }
+    <% for profile in resume.basics.profiles %>
+    \textbf{<{ profile.network }>}
+    <% if not forloop.last %>
+    &
+    <% endif %>
+    <% endfor %> \\
+    <% for profile in resume.basics.profiles %>
+    <{ profile.username }> (<{ profile.url }>)
+    <% if not forloop.last %>
+    &
+    <% endif %>
+    <% endfor %>
+  \end{tabular}
+\end{center}
+\section{Work}
+<% for work in resume.work %>
+\datedsubsection{<{work.company}>}{<{work.startDate|date:"MMM yyyy"}> - <{work.endDate|date:"MMM yyyy"}>}
+\subsubsection{<{ work.position}>}
+<{ work.summary|escape-tex }>
+<% if work.highlights|not-empty %>
+\begin{itemize}
+<% for highlight in work.highlights %>
+  \item <{ highlight|escape-tex }>
+<% endfor %>
+\end{itemize}
+<% endif %>
+<% endfor %>
+\section{Education}
+<% for education in resume.education %>
+\datedsubsection{<{education.institution}>}{<{education.startDate|date:"MMM yyyy"}> — <{education.endDate|date:"MMM yyyy"}>}
+\textbf{<{education.area}>} - <{education.studyType}>
+<% endfor %>
+\section{Skills}
+\begin{multicols}{2}
+<% for skill in resume.skills %>
+\subsection{<{skill.name}>}
+\begin{itemize}
+  \setlength\itemsep{0.1em}
+  <% for keyword in skill.keywords %>
+  \item <{ keyword|escape-tex }>
+  <% endfor %>
+\end{itemize}
+\vspace{0.5em}
+<% endfor %>
+\end{multicols}
+\section{Languages}
+\begin{multicols}{2}
+<% for language in resume.languages %>
+\subsection{<{language.language}>}
+<{language.fluency}>
+<% endfor %>
+\end{multicols}
+\section{Interests}
+<% for interest in resume.interests %>
+\subsection{<{interest.name}>}
+<% if interest.keywords|not-empty %>
+\begin{itemize}
+  \setlength\itemsep{0.1em}
+  <% for keyword in interest.keywords %>
+\item <{ keyword|escape-tex }>
+  <% endfor %>
+\end{itemize}
+\vspace{0.5em}
+<% endif %>
+<% endfor %>
+\end{document}
+<% endsafe %>
