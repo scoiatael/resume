@@ -25,6 +25,7 @@
   (selmer/render-file "resume.html" {:resume (resume-json)
                                      :css (slurp (io/resource "public/style.css"))
                                      :css-paths ["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"
+                                                 "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/flag.min.css"
                                                  "https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"]}))
 
 ;; Inspired by https://github.com/yogthos/Selmer/blob/4fdf5b546d6afb2e5cea98adc9424694f6ca5e64/src/selmer/filter_parser.clj#L21
