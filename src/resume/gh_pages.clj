@@ -16,7 +16,7 @@
   []
   (let [git-tag (-> (sh! "git" "describe" "--tags") :out str/trim)]
     (sh! "git" "checkout" "gh-pages")
-    (sh! "mv" "target/dist/resume.html" "index.html")
+    (sh! "cp" "target/dist/resume.html" "index.html")
     (sh! "git" "add" "index.html")
     (sh! "git" "commit" "-m" (str "release: " git-tag))
     (sh! "git" "push" "origin" "gh-pages")))
