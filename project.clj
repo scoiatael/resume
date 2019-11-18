@@ -1,4 +1,4 @@
-(defproject resume "1.4.0"
+(defproject resume "1.4.0-pages-deploy-fix"
   :description "Resume generator"
   :url "http://github.com/scoiatael/resume"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"

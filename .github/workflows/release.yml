@@ -69,6 +69,6 @@ jobs:
 
       - name: Update gh-pages branch
         run: |
-          lein gh-pages-export
+          lein gh-pages-deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
