@@ -69,6 +69,8 @@ jobs:
 
       - name: Update gh-pages branch
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           lein gh-pages-deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
