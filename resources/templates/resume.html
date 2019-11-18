@@ -32,7 +32,7 @@ SOFTWARE.
 	<title>{{resume.basics.name}}</title>
 
   {% for path in css-paths %}
-  {% style path %}
+  <link href="{{ path }}" rel="stylesheet" type="text/css" />
   {% endfor %}
   <style type="text/css">
     {{ css|safe }}
