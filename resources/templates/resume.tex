@@ -54,7 +54,7 @@
 \end{multicols}
 \section{Work}
 <% for work in resume.work %>
-\datedsubsection{<{work.company}>}{<{work.startDate|date:"MMM yyyy"}> - <{work.endDate|date:"MMM yyyy"}>}
+\datedsubsection{<{work.company}>}{<{work.startDate|date:"MMM yyyy"}> - <{work.endDate|date:"MMM yyyy"|default:"now"}>}
 \subsubsection{<{ work.position}>}
 <{ work.summary|escape-tex }>
 <% if work.highlights|not-empty %>

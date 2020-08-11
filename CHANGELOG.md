@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [1.5.0] - 11.08.2020
+### Added
+- Section about current work
+- Option to keep end dates for work undefined
+
 ## [1.4.0] - 18.11.2019
 ### Added
 - Script to export to gh-pages
@@ -41,6 +46,7 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 - Export to [json resume](jsonresume.org).
 
+[1.5.0]: https://github.com/scoiatael/resume/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/scoiatael/resume/compare/v1.3.3...v1.4.0
 [1.3.3]: https://github.com/scoiatael/resume/compare/v1.3.2...v1.3.3
 [1.3.2]: https://github.com/scoiatael/resume/compare/v1.3.1...v1.3.2

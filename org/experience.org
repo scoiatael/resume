@@ -1,11 +1,15 @@
 * Experience
+** Opera AS
+    :FROM: 2020-01-13
+    :POSITION: DevOps @ Opera Statistics Platform
+    Developed and maintained metrics platform, gathering data from all of Opera products and processing them for both in-house consumption and exports.
 ** Tooploox
     :FROM: 2014-06-07
     :TO: 2019-10-31
     :POSITION: Senior Fullstack Developer
     Took part in explosive growth of the company. In the meantime built products with many startups and startup-like companies (listed underneath).
 ** One of major car manufacturers
-    :FROM: 2019-09-01
+:FROM: 2019-09-01
     :TO: 2019-10-31
     :POSITION: Freelance Researcher / Developer
     Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location.

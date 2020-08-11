@@ -3,7 +3,8 @@
 
 (defn parse-date
   [date]
-  (time/local-date "yyyy-MM-dd" date))
+  (if date
+    (time/local-date "yyyy-MM-dd" date)))
 
 (defn export-education
   "Convert org section about education into resume.json format"

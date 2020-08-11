@@ -1,4 +1,6 @@
 {% comment %}
+-*- engine:django -*-
+
 Based on https://github.com/bvosk/jsonresume-theme-pumpkin/blob/050a4c8/resume.hbs
 
 Copyright (c) 2019 Łukasz Czapliński
@@ -214,7 +216,7 @@ SOFTWARE.
 				<h4 class="strike-through">
 					<span>{{work.company}}</span>
 					<span class="date">
-						{{work.startDate|date:"MMM yyyy"}} — {{work.endDate|date:"MMM yyyy"}}
+						{{work.startDate|date:"MMM yyyy"}} — {{work.endDate|date:"MMM yyyy"|default:"now"}}
 					</span>
 				</h4>
 				{% with url=work.website %}
