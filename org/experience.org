@@ -1,109 +1,111 @@
 * Experience
 ** Opera AS
-    :FROM: 2020-01-13
-    :POSITION: DevOps @ Opera Statistics Platform
-    Developed and maintained metrics platform, gathering data from all of Opera products and processing them for both in-house consumption and exports.
+:FROM: 2020-01-13
+:POSITION: DevOps @ Opera Statistics Platform
+:WEBSITE: https://www.opera.com
+Developed and maintained metrics platform, gathering data from all of Opera products and processing them for both in-house consumption and exports.
+Optimised ingestion pipeline for better performance,
+Architected and implemented PoC for periodic job execution system for analytics team,
 ** Tooploox
-    :FROM: 2014-06-07
-    :TO: 2019-10-31
-    :POSITION: Senior Fullstack Developer
-    Took part in explosive growth of the company. In the meantime built products with many startups and startup-like companies (listed underneath).
+:FROM: 2014-06-07
+:TO: 2019-10-31
+:POSITION: Senior Fullstack Developer
+:WEBSITE: https://www.tooploox.com
+Took part in explosive growth of the company. In the meantime built products with many startups and startup-like companies (listed underneath).
 ** One of major car manufacturers
 :FROM: 2019-09-01
-    :TO: 2019-10-31
-    :POSITION: Freelance Researcher / Developer
-    Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location.
-    Designed & implemented set of embedded binaries, cleaned production data & simulated patching process.
+:TO: 2019-10-31
+:POSITION: Freelance Researcher / Developer
+Proof-of-concept for API working in car's head unit, providing information about broadcasts based on car location.
+Designed & implemented set of embedded binaries, cleaned production data & simulated patching process.
 ** Quizzpy
-    :ICON: https://d33wubrfki0l68.cloudfront.net/b0e95300f043b4d28372f8cf19277df987c936bc/b2032/quizzpy-logo.2aacc600.svg
-    :FROM: 2018-03-01
-    :TO: 2019-09-01
-    :POSITION: Tech Lead / Principle Software Engineer
-    Live trivia show, targeted for Polish audience. Startup-like environment, with small team having full control of the product.
-    Spearheaded architecture & scaling efforts, implemented backend,
-    Developed infrastructure in IaaC model while reducing costs,
+:FROM: 2018-03-01
+:TO: 2019-09-01
+:POSITION: Tech Lead / Principle Software Engineer
+:WEBSITE: https://www.facebook.com/Quizzpy/
+Live trivia show, targeted for Polish audience. Startup-like environment, with small team having full control of the product.
+Spearheaded architecture & scaling efforts, implemented backend,
+Developed infrastructure in IaaC model while reducing costs,
 ** Holacracy at Tooploox
-    :ICON: https://images.squarespace-cdn.com/content/5d1239a79c02150001db74d4/1561475648342-TU0F0W6TRID5IAKCKM0E/Holacracy_Primary.png?format=1500w&content-type=image%2Fpng
-    :FROM: 2018-09-01
-    :TO: 2019-10-31
-    :POSITION: Facilitator, Architect, Estimator, Strategy Guardian (Engineering circle)
+:FROM: 2018-09-01
+:TO: 2019-10-31
+:POSITION: Facilitator, Architect, Estimator, Strategy Guardian (Engineering circle)
 ** Group Nine Media
-    :ICON: https://en.wikipedia.org/wiki/Group_Nine_Media#/media/File:Group_Nine_Media_Logo.svg
-    :FROM: 2016-01-01
-    :TO: 2018-03-01
-    :POSITION: Data Pipeline Tech Lead
-    Platform for monitoring & analysis of publishings on social platforms.
-    Designed data pipeline based on Lambda architecture & lead team that implemented and maintained it,
+:FROM: 2016-01-01
+:TO: 2018-03-01
+:POSITION: Data Pipeline Tech Lead
+:WEBSITE: https://www.groupninemedia.com
+Platform for monitoring & analysis of publishings on social platforms.
+Designed data pipeline based on Lambda architecture & lead team that implemented and maintained it,
 ** NowThis
-    :ICON: https://en.wikipedia.org/wiki/NowThis_News#/media/File:Now_This_Logo_White.svg
-    :FROM: 2014-10-01
-    :TO: 2016-01-01
-    :POSITION: Backend Developer
+:FROM: 2014-10-01
+:TO: 2016-01-01
+:POSITION: Backend Developer
+:WEBSITE: https://nowthisnews.com
 ** Golem app
-    :ICON: https://web.archive.org/web/20160318141954im_/http://golemapp.com/static/images/logo.png
-    :FROM: 2014-06-07
-    :TO: 2014-09-01
-    :POSITION: Junior Fullstack Developer
+:FROM: 2014-06-07
+:TO: 2014-09-01
+:POSITION: Junior Fullstack Developer
 * Skills
 ** Backend
-   :LEVEL: Senior
-    Golang / Elixir / Ruby / Node.js
-    Postgres / Redis / Cassandra
+:LEVEL: Senior
+Golang / Elixir / Ruby / Node.js
+Postgres / Redis / Cassandra
 ** Ops
-   :LEVEL: Senior
-    Chef / Ansible / Terraform
-    GCP / AWS / OVH
-    CDNs
-    Docker / Kubernetes
+:LEVEL: Senior
+Chef / Ansible / Terraform
+GCP / AWS / OVH
+CDNs
+Docker / Kubernetes
 ** Frontend
-   :LEVEL: Mid
-    Javascript
-    Css / Sass
-    React / Redux / Vue.js
+:LEVEL: Mid
+Javascript
+Css / Sass
+React / Redux / Vue.js
 ** Architecture
-   :LEVEL: Mid
-    Event Sourcing / CQRS / DDD
-    Lambda architecture
+:LEVEL: Mid
+Event Sourcing / CQRS / DDD
+Lambda architecture
 ** Big Data
-   :LEVEL: Mid
-    Python (Pandas / PySpark)
-    BigQuery
+:LEVEL: Mid
+Python (Pandas / PySpark)
+BigQuery
 ** Product development
-   :LEVEL: Mid
-    Agile methodology / Lean / Scrum
-    Github / Zenhub / Jira / Confluence
+:LEVEL: Mid
+Agile methodology / Lean / Scrum
+Github / Zenhub / Jira / Confluence
 * Education
 ** Master of Computer Science (2011-2016)
-   :FROM: 2011-10-01
-   :TO: 2016-11-07
-   :DEGREE: Masters
-   :INSTITUTION: University of Wroclaw
-   :AREA: Computer Science
-  Computer Science Institute, University of Wroclaw
+:FROM: 2011-10-01
+:TO: 2016-11-07
+:DEGREE: Masters
+:INSTITUTION: University of Wroclaw
+:AREA: Computer Science
+Computer Science Institute, University of Wroclaw
 * Basics
-  :NAME: Łukasz Czapliński
-  :LABEL: Web Developer / Architect
-  :EMAIL: lukasz@czaplin.ski
-  :SUMMARY: I'm a fullstack with focus on delivering & evolving products, not simply building features according to schedule. I'm open to working both remotely and on-site.
+:NAME: Łukasz Czapliński
+:LABEL: Web Developer / Architect
+:EMAIL: lukasz@czaplin.ski
+:SUMMARY: I'm a fullstack with focus on delivering & evolving products, not simply building features according to schedule. I'm open to working both remotely and on-site.
 ** Location
-   :CITY: Wrocław
-   :COUNTRY: PL
+:CITY: Wrocław
+:COUNTRY: PL
 ** Profiles
 *** Github
-    :USERNAME: scoiatael
-    :URL: https://github.com/scoiatael
+:USERNAME: scoiatael
+:URL: https://github.com/scoiatael
 *** Keybase
-    :USERNAME: scoiatael
-    :URL: https://keybase.io/scoiatael
+:USERNAME: scoiatael
+:URL: https://keybase.io/scoiatael
 * Interests
 ** Yachting
-    Polish skipper degree
+Polish skipper degree
 ** Tabletop and collectible card games
-    Magic the Gathering
-    Warhammer 40k
+Magic the Gathering
+Warhammer 40k
 ** Windsurfing
 * Languages
 ** Polish
-    :LEVEL: native
+:LEVEL: native
 ** English
-    :LEVEL: bilingual
+:LEVEL: bilingual

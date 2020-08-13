@@ -72,6 +72,7 @@
          name :heading} experience]
     {:summary (first text)
      :company name
+     :website (get options "WEBSITE")
      :position (get options "POSITION")
      :startDate (parse-date (get options "FROM"))
      :endDate (parse-date (get options "TO"))

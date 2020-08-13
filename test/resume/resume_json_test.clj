@@ -49,6 +49,7 @@
                 :position "Senior Javascript Developer"
                 :startDate (sut/parse-date "2018-03-01")
                 :endDate (sut/parse-date "2019-03-01")
+                :website nil
                 :highlights ["React, Apollo, Styled Components"
                              "Node.js / Rails"]})
 

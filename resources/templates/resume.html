@@ -28,251 +28,251 @@ SOFTWARE.
 <html>
 	<head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
-	<title>{{resume.basics.name}}</title>
+		<title>{{resume.basics.name}}</title>
 
-  {% for path in css-paths %}
-  <link href="{{ path }}" rel="stylesheet" type="text/css" />
-  {% endfor %}
-  <style type="text/css">
-    {{ css|safe }}
-  </style>
+		{% for path in css-paths %}
+			<link href="{{ path }}" rel="stylesheet" type="text/css" />
+		{% endfor %}
+		<style type="text/css">
+		 {{ css|safe }}
+		</style>
 
 	</head>
 	<body>
 
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>{{resume.basics.name}}</h1>
-					<h2>{{resume.basics.label}}</h2>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 col-sm-push-3">
+						<h1>{{resume.basics.name}}</h1>
+						<h2>{{resume.basics.label}}</h2>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+		</header>
+		<div id="content" class="container">
 
-	{{#resume.basics}}
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">{{resume.basics.email|email}}</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Location</strong>
-				<div class="location">{{resume.basics.location.city}}
-          <i class="{{resume.basics.location.countryCode|lower}} flag"></i>
-        </div>
-			</div>
-			{% if resume.basics.phone|not-empty %}
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">{{resume.basics.phone}}</div>
-			</div>
-			{% endif %}
-			{% if resume.basics.website|not-empty %}
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="{{resume.basics.website}}">{{.}}</a>
-				</div>
-			</div>
-			{% endif %}
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>{{resume.basics.summary}}</p>
-		</div>
-	</section>
-	{% if resume.basics.profiles|not-empty %}
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-        {% for profile in resume.basics.profiles %}
-				<div class="col-sm-6">
-					<strong class="network">
-						{{profile.network}}
-					</strong>
-					{% if profile.username|not-empty %}
-					<div class="username">
-						{% if profile.url|not-empty %}
-						<div class="url">
-							<a href="{{profile.url}}">{{profile.username}}</a>
+			{{#resume.basics}}
+			<section id="contact" class="row">
+				<aside class="col-sm-3">
+					<h3>Contact</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong>Email</strong>
+							<div class="email">{{resume.basics.email|email}}</div>
 						</div>
-						{% else %}
-							{{profile.username}}
+						<div class="col-sm-6">
+							<strong>Location</strong>
+							<div class="location">{{resume.basics.location.city}}
+								<i class="{{resume.basics.location.countryCode|lower}} flag"></i>
+							</div>
+						</div>
+						{% if resume.basics.phone|not-empty %}
+							<div class="col-sm-6">
+								<strong>Phone</strong>
+								<div class="phone">{{resume.basics.phone}}</div>
+							</div>
+						{% endif %}
+						{% if resume.basics.website|not-empty %}
+							<div class="col-sm-6">
+								<strong>Website</strong>
+								<div class="website">
+									<a href="{{resume.basics.website}}">{{.}}</a>
+								</div>
+							</div>
 						{% endif %}
 					</div>
-					{% else %}
-						{% if profile.url|not-empty %}
-						<div class="url">
-							<a href="{{profile.url}}">{{profile.url}}</a>
+				</div>
+			</section>
+			<section id="about" class="row">
+				<aside class="col-sm-3">
+					<h3>About</h3>
+				</aside>
+				<div class="col-sm-9">
+					<p>{{resume.basics.summary}}</p>
+				</div>
+			</section>
+			{% if resume.basics.profiles|not-empty %}
+				<section id="profiles" class="row">
+					<aside class="col-sm-3">
+						<h3>Profiles</h3>
+					</aside>
+					<div class="col-sm-9">
+						<div class="row">
+							{% for profile in resume.basics.profiles %}
+								<div class="col-sm-6">
+									<strong class="network">
+										{{profile.network}}
+									</strong>
+									{% if profile.username|not-empty %}
+										<div class="username">
+											{% if profile.url|not-empty %}
+												<div class="url">
+													<a href="{{profile.url}}">{{profile.username}}</a>
+												</div>
+											{% else %}
+												{{profile.username}}
+											{% endif %}
+										</div>
+									{% else %}
+										{% if profile.url|not-empty %}
+											<div class="url">
+												<a href="{{profile.url}}">{{profile.url}}</a>
+											</div>
+										{% endif %}
+									{% endif %}
+								</div>
+							{% endfor %}
 						</div>
-						{% endif %}
-					{% endif %}
+					</div>
+				</section>
+			{% endif %}
+
+			<section id="education" class="row">
+				<aside class="col-sm-3">
+					<h3>Education</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						{% for education in resume.education %}
+							<div class="col-sm-12">
+								<h4 class="strike-through">
+									<span>{{education.institution}}</span>
+									<span class="date">
+										{{education.startDate|date:"MMM yyyy"}} — {{education.endDate|date:"MMM yyyy"}}
+									</span>
+								</h4>
+								<div class="area">
+									{{education.area}}
+								</div>
+								<div class="studyType">
+									{{education.studyType}}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
 				</div>
-				{% endfor %}
-			</div>
+			</section>
+
+			<section id="skills" class="row">
+				<aside class="col-sm-3">
+					<h3>Skills</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						{% for skill in resume.skills %}
+							<div class="col-sm-6">
+								<div class="name">
+									<h4 class="skill-{{skill.level|lower}}">{{skill.name}}</h4>
+								</div>
+								<ul class="keywords">
+									{% for keyword in skill.keywords %}
+										<li>{{keyword}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
+			{% if resume.languages|not-empty %}
+				<section id="languages" class="row">
+					<aside class="col-sm-3">
+						<h3>Languages</h3>
+					</aside>
+					<div class="col-sm-9">
+						<div class="row">
+							{% for language in resume.languages %}
+								<div class="col-sm-6">
+									<div class="language">
+										<strong>{{language.language}}</strong>
+									</div>
+									<div class="fluency">
+										{{language.fluency}}
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+			{% endif %}
+
+
+			{% if resume.work|not-empty %}
+				<section id="work" class="row">
+					<aside class="col-sm-3">
+						<h3>Work</h3>
+					</aside>
+					<div class="col-sm-9">
+						<div class="row">
+							{% for work in resume.work %}
+								<div class="col-sm-12">
+									<h4 class="strike-through">
+										<span>{{work.company}}</span>
+										<span class="date">
+											{{work.startDate|date:"MMM yyyy"}} — {{work.endDate|date:"MMM yyyy"|default:"now"}}
+										</span>
+									</h4>
+									{% with url=work.website %}
+										{% if url|not-empty %}
+											<div class="website pull-right">
+												<a href="{{url}}">{{url}}</a>
+											</div>
+										{% endif %}
+									{% endwith %}
+									<div class="position">
+										{{work.position}}
+									</div>
+									<div class="summary">
+										<p>{{work.summary}}</p>
+									</div>
+									{% if work.highlights|not-empty %}
+										<ul class="highlights">
+											{% for highlight in work.highlights %}
+												<li class="bullet">{{highlight}}</li>
+											{% endfor %}
+										</ul>
+									{% endif %}
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+			{% endif %}
+
+			{% if resume.interests|not-empty %}
+				<section id="interests" class="row">
+					<aside class="col-sm-3">
+						<h3>Interests</h3>
+					</aside>
+					<div class="col-sm-9">
+						<div class="row">
+							{% for interest in resume.interests %}
+								<div class="col-sm-6">
+									<div class="name">
+										<h4>{{interest.name}}</h4>
+									</div>
+									{% if interest.keywords|not-empty %}
+										<ul class="keywords">
+											{% for keyword in interest.keywords %}
+												<li>{{keyword}}</li>
+											{% endfor %}
+										</ul>
+									{% endif %}
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+			{% endif %}
+
 		</div>
-	</section>
-	{% endif %}
-
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			{% for education in resume.education %}
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>{{education.institution}}</span>
-					<span class="date">
-						{{education.startDate|date:"MMM yyyy"}} — {{education.endDate|date:"MMM yyyy"}}
-					</span>
-				</h4>
-				<div class="area">
-					{{education.area}}
-				</div>
-				<div class="studyType">
-					{{education.studyType}}
-				</div>
-			</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
-
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			{% for skill in resume.skills %}
-			<div class="col-sm-6">
-				<div class="name">
-					<h4 class="skill-{{skill.level|lower}}">{{skill.name}}</h4>
-				</div>
-				<ul class="keywords">
-          {% for keyword in skill.keywords %}
-					<li>{{keyword}}</li>
-          {% endfor %}
-				</ul>
-			</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
-
-	{% if resume.languages|not-empty %}
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			{% for language in resume.languages %}
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>{{language.language}}</strong>
-				</div>
-				<div class="fluency">
-					{{language.fluency}}
-				</div>
-			</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
-	{% endif %}
-
-
-	{% if resume.work|not-empty %}
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			{% for work in resume.work %}
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>{{work.company}}</span>
-					<span class="date">
-						{{work.startDate|date:"MMM yyyy"}} — {{work.endDate|date:"MMM yyyy"|default:"now"}}
-					</span>
-				</h4>
-				{% with url=work.website %}
-        {% if url|not-empty %}
-				<div class="website pull-right">
-					<a href="{{url}}">{{url}}</a>
-				</div>
-        {% endif %}
-				{% endwith %}
-				<div class="position">
-					{{work.position}}
-				</div>
-				<div class="summary">
-					<p>{{work.summary}}</p>
-				</div>
-        {% if work.highlights|not-empty %}
-				<ul class="highlights">
-          {% for highlight in work.highlights %}
-					<li class="bullet">{{highlight}}</li>
-          {% endfor %}
-				</ul>
-        {% endif %}
-			</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
-	{% endif %}
-
-	{% if resume.interests|not-empty %}
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			{% for interest in resume.interests %}
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>{{interest.name}}</h4>
-				</div>
-				{% if interest.keywords|not-empty %}
-				<ul class="keywords">
-					{% for keyword in interest.keywords %}
-					<li>{{keyword}}</li>
-					{% endfor %}
-				</ul>
-				{% endif %}
-			</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
-	{% endif %}
-
-	</div>
 
 	</body>
 </html>
