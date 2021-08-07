@@ -5,7 +5,7 @@
 :WEBSITE: https://www.opera.com
 Developed and maintained metrics platform, gathering data from all of Opera products and processing them for both in-house consumption and exports.
 Optimised ingestion pipeline for better performance,
-Architected and implemented PoC for periodic job execution system for analytics team,
+Architected and implemented periodic job execution system for analytics team,
 ** Tooploox
 :FROM: 2014-06-07
 :TO: 2019-10-31
@@ -49,7 +49,7 @@ Designed data pipeline based on Lambda architecture & lead team that implemented
 * Skills
 ** Backend
 :LEVEL: Senior
-Golang / Elixir / Ruby / Node.js
+Golang / Elixir / Ruby / Python
 Postgres / Redis / Cassandra
 ** Ops
 :LEVEL: Senior
